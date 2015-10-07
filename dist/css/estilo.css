@@ -201,17 +201,22 @@ a.conta {
 }
 
 .conta {
-	width: 113px;
-	background-image: url(../../img/sprite.png);
-    background-position-y: -55px;
+    width: 35px;
+    background-image: url(../../img/my-acount.png);
+    background-position-y: 0px;
     background-position-x: 0px;
+    background-repeat: no-repeat;
+    background-color: #3d75b3 !important;
+    border-bottom: 6px solid #00adf3;
 }
 
 .conta:hover {
-	width: 113px;
-	background-image: url(../../img/sprite.png);
-    background-position-y: -55px;
-    background-position-x: -112px;
+	width: 35px;
+	background-image: url(../../img/my-acount.png);
+    background-position-y: 0px;
+    background-position-x: 0px;
+	background-color: #00adf3 !important;
+	border-bottom: 6px solid #3d75b3;	
 }
 
 #nav {
@@ -380,8 +385,8 @@ label {
 /*CONTEUDO SOMENTE CENTRAL*/
 .centro {
 	display:block;
-	width:1080px;
-	text-align:center;
+    width: 702px;
+    margin: 0 auto;
 }
 /*FIM CONTEDO SOMENTE CENTRAL*/
 
