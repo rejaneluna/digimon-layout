@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+html {
+	/*background: url(../imagens/bg-digimon.jpg) no-repeat center center fixed;  /*imagem fixada no centro e sem repetiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o */
+	-webkit-background-size: cover; /*regra para a imagem ocupar toda a extensÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£o da pÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡gina em diferentes navegadores */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+}
+
+html, body{
+	height:100%;
+	font-family: "Myriad Pro";
+	color:white;
+}
+
+body {
+	background-image: url(../../img/back-body.jpg);
+}
+/*TODO O Conteudo*/
+
+#interface {
+	min-height: 100%;
+	position: relative;
+	margin-left:-8px;
+	margin-right:-8px;
+	bottom: 120px;
+}
+a {
+	text-decoration:none;
+	text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 186px;
+    }
+
+li {
+	list-style: none;
+}
+
+* html #interface {
+	height: 100%; /* hack para IE6 que trata height como min-height */
+}
+
+/*BARRA Superior*/
+#header {
+	height: 70px;
+	background-color: #041227;/*altura e cor da barra superior */
+	width: 100%;
+	margin-top:-8px;
+	position: fixed;
+	z-index: 99999;
+}
+
+/*FIM BARRA SUPERIOR*/
+
+/*CONTEUDO CENTRAL*/
+#main{
+	padding-top:35px;
+	padding-bottom:50px;
+	width:1080px;
+	/*height:95%;*/
+	position:relative;
+	margin: 0 auto;
+}
+
+#main h1{
+	text-align:center;
+	color:black;	
+	font-size:30px;
+}
+#main #botoes{
+	clear: both;
+	text-align:center;	
+	bottom:0;
+	height:100px;
+}
+#botoes input{
+	margin-top:40px;
+	height:50px;
+	width:95px;
+	margin-left:15px;
+	color:transparent;
+	border:none;
+	font-size:0px;
+	background-color: transparent;
+}
+
+#enviarJ {
+	background-image: url(../../img/sprite.png);
+	background-position-x: -93px;
+}
+
+#enviarJ:hover {
+	background-image: url(../../img/sprite.png);
+	background-position-x: 1px;
+}
+
+#limparJ {
+	background-image: url(../../img/sprite.png);
+	background-position-x: -187px;
+}
+
+#limparJ:hover {
+	background-image: url(../../img/sprite.png);
+	background-position-x: -281px;
+}
+
+/*FIM CONTEUDO CENTRAL*/
+
+/*BARRA INFERIOR*/
+#rodape{
+	clear: both;
+	position:fixed;
+	/*margin-top:40vh;*/
+	height: 70px;
+	background-color: #041227;
+	width: 100%;	
+	/*display:block;*/
+	bottom:0;
+	
+}
+
+#rodape .main{
+	width:1080px;
+	margin:0 auto;
+}
+
+#footer{
+	text-align:center;
+	margin:25px auto;
+}
+/*FIM BARRA INFERIOR*/
+
+/*MENU*/
+#header .main {
+	margin: 0 auto;
+	width:1080px;
+	height:70px;
+}
+
+img.logo {
+    margin-top: 15px;
+	margin-left:4px;
+}
+
+/*Menu*/
+#nav, #nav * {
+	margin: 0;
+	padding: 0;
+}
+
+#nav, #nav ul {
+	width: 70em;
+}
+
+.login {
+    float: right;
+    margin: 0px 12px 0 0;
+}
+
+a.conta {
+    background-color: #3d75b3;
+    margin-right: 6px;
+}
+
+/*.login a {
+    display: inline-block;
+    padding: 0px 0 0 0px;
+    color: white;
+    background-color: #00adf3;
+    text-align: center;
+    width: 110px;
+}*/
+
+.login a {
+    display: inline-block;
+    /* padding: 0px 0 0 0px; */
+    color: transparent;
+    background-color: transparent;
+	height: 31px;
+}
+
+.sair{   
+    width:90px;
+    background-image: url(../../img/sprite.png);
+    background-position-y: -55px;
+    background-position-x: -313px;
+}
+
+.sair:hover {
+
+	background-image: url(../../img/sprite.png);
+    background-position-y: -55px;
+    background-position-x: -222px;
+
+}
+
+.conta {
+	width: 113px;
+	background-image: url(../../img/sprite.png);
+    background-position-y: -55px;
+    background-position-x: 0px;
+}
+
+.conta:hover {
+	width: 113px;
+	background-image: url(../../img/sprite.png);
+    background-position-y: -55px;
+    background-position-x: -112px;
+}
+
+#nav {
+    /* width: 10em; */
+    width: 75%;
+    float: right;
+    /* background: #00adf3; */
+    padding: 0;
+    margin-top: -16px;
+    /* border-top: solid 1px white; */
+    text-align: right;
+}
+
+#nav li {
+	float: right;
+	/*display: inline;*/
+	/*border-bottom: 0.5em solid #00adf3;*/
+}
+
+.submenu-1 a {
+    background-color: #00adf3 !important;
+}
+
+.submenu-1 li:hover a {
+    background-color: #00adf3 !important;
+}
+
+#nav a {
+	display: block;
+	width: 8em;
+	/*height: 2em;*/
+	line-height: 2;
+	text-align: center;
+	/*border: 1px solid #ccc;
+	border-width: 0 1px 1px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	padding: 0.25em 0.5em 0.25em 0.75em;
+	border-left: 1em solid #069;*/
+	background-color:#041227;
+	color: #fff;
+}
+
+
+/*Corrigir renderização do a com display block no IE6*/
+*html #nav li a {height: 1%;}
+
+
+#nav li:hover > a {
+    background-color: #3d75b3 !important;
+	/*border-right: 0.5em solid #041227;
+    width: 9.5em;*/
+}
+#nav a:hover {
+	/*background: #c7daec;*/
+	color: #69c;
+	/*color: #2eacd5;*/
+	/*background: #3d75b3;*/
+	/*width: 9.5em;*/
+	color: #fff;
+}
+
+#nav li ul {
+    position: absolute;
+    left: -1000em;
+    width: 10em;
+    margin: 0px 0 0 -32px;
+}
+
+ul.submenu-1 .submenu-1 {
+    margin: -32px 0 0 96px !important;
+}
+
+#nav ul ul {
+	margin: -2em 0 0 10em;
+}
+
+#nav li:hover ul ul, #nav li li:hover ul ul {
+	left: -1000em;
+}
+
+#nav li:hover ul, nav li li:hover ul , #nav li li:hover ul, nav li li li:hover ul{
+	left: auto;
+}
+
+/*#nav li a:visited {
+	color:#ccc;
+}*/
+
+	
+
+
+
+/*Fim menu*/
+
+/*FORMULARIO*/
+fieldset{
+	padding: 10px 15px;
+	margin-bottom:19px;
+	margin: 0;
+	width: 90%;
+}
+
+legend{
+	font-size: 20px;
+	color: black;
+}
+
+.formulario {
+    margin: 20px 0 0 20px;
+	/*background-color:rgba(0,0,0, 0.7);*/
+    /* width: 50%; */
+    /* width: 100%; */
+    /* padding-left: 10px; */
+    text-align: left;
+	padding: 20px 0 20px 0;
+}
+.atributo{
+	width:45px;
+}
+.campo{
+	float: left;
+	width: 100%;
+	height: auto;
+	/* font-size: 16px; */
+	padding-bottom:10px;
+	/* margin:0 auto; */
+}
+.campo input{
+	display:block;
+	padding:3px;
+	margin-top:3px;
+	margin-bottom:4px;
+	max-width: 160%;
+	font-size:18px;
+	height: 14px;
+	float: left;
+	width:301px;
+}
+
+input#telJ {
+    width: 128px;
+}
+
+input#celJ {
+    width: 129px;
+}
+
+label {
+	float: left;
+	text-align:right;
+	margin: 5px 10px 0 0;
+	min-width:118px;
+	color: black;
+}
+
+.tSpan {
+    float: left;
+    font-size: 12px;
+    color: white;
+    background-color: red;
+	margin: -4px 0 0 129px;
+}
+/*FORMULARIO*/
+
+/*CONTEUDO SOMENTE CENTRAL*/
+.centro {
+	display:block;
+	width:1080px;
+	text-align:center;
+}
+/*FIM CONTEDO SOMENTE CENTRAL*/
+
+/*CONTEUDO CENTRAL LADO ESQUERDO*/
+.esquerda{
+	float:left;
+	display:block;
+	width: 522px;
+	text-align:center;
+	margin: 0 0 0 15px;
+}
+/*FIM CONTEUDO CENTRAL LADO ESQUERDO*/
+
+/*CONTEUDO CENTRAL LADO DIREITO*/
+.direita{
+	text-align:center;
+	display:block;
+	width: 522px;
+	float: left;
+	margin: 0px;
+}
+
+#limparJ:hover, #enviarJ{
+cursor: pointer;
+}
+
+.clear {
+	clear:both;
+}
+
+/*FIM CONTEUDO CENTRAL LADO DIREITO*/
+/*
+a {
+	text-decoration: none;
+	color: #324481;
+	font-family: "Myriad Pro";
+}
+
+li{
+	list-style:none;
+	margin: 0;
+}
+*/
+/*Barra do Menu*/
+
+
+
+
+/*Div que centraliza o conteÃƒÆ’Ã‚Âºdo
+.wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+Menu*/
+/*
+.menu {
+	float: right;
+	margin-top: 5px;
+	height: 70px;
+}
+
+.menu li {
+	display:inline;
+	float:right;
+	position:relative;
+	width:150px;
+	line-height:28px;
+}
+
+.menu li a {
+	font-family: "Myriad Pro";
+	color: white;
+	text-decoration: none;
+	padding: 27px 10px;
+}
+
+.menu li a:hover{
+	background-color: #00adf3;/*regra para quando o mouse passar em cima de um item do menu. A regra que define o tamanho da caixa a ser colorida ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© o padding acima. 
+}*/
+/*Fim menu*/
+
+/*submenu*/
+
+/*fim submenu
+
+.main{
+	min-height: 100%;
+	padding-bottom: 0px;
+	margin: 0 auto;
+}
+
+.home .header {
+	margin-top:0px;
+}
+.home .main .wrapper {
+	width: 750px;
+	/* height: 100%; */
+	/*position: relative;
+}*/

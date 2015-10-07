@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="pt-br">
+<head>
+	<title>Cadastro Frete</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/estilo.css">
+	<link href='https://fonts.googleapis.com/css?family=Cantarell:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js\novo.js" defer=""></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+	<div id="interface">
+		<div id="header">
+			<div class="main">
+				<a href="https://goo.gl/SsAhv"><img src="dist/imagens/logo.png" class="logo"></a>
+				<div class="login">
+				  <a class="conta" href="#">Minha Conta</a>
+				  <a class="sair" href="#">Sair</a>
+				</div>
+				<ul id="nav"> <!-- Esse é o 1 nivel ou o nivel principal -->
+					<li class="menu"><a href="#">Usuários</a>
+						<ul class="submenu-1"> <!--Esse é o 2 nivel ou o primeiro Drop Down--> 
+							<li><a href="#">Cadastrar</a></li>
+							<li><a href="#">Pesquisar</a></li>
+							<li><a href="#">Consultar</a></li>       
+						</ul>
+					</li>
+					<li class="menu"><a href="#">Relatórios</a>
+						<ul class="submenu-1"> <!--Esse é o 2 nivel ou o primeiro Drop Down--> 
+							<li><a href="#">Emitir</a></li>
+							<li><a href="#">Pesquisar</a></li>
+							<li><a href="#">Consultar</a></li> 
+							<li><a href="#">Rota</a></li> 
+						</ul>
+					</li>
+					<li class="menu"><a href="#">Transportador</a>
+						<ul class="submenu-1">
+							<li><a href="#" class="menuItem">Frete</a>
+								<ul class="submenu-1"><!--Esse é o 2 nivel ou o primeiro Drop Down -->
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="menuItem">Veículo</a>
+								<ul class="submenu-1"><!--  Esse é o 2 nivel ou o primeiro Drop Down-->
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>        
+								</ul>
+							</li>
+							<li><a href="#" class="menuItem">Motorista</a>
+								<ul class="submenu-1"> <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>        
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="menu"><a href="#">Infraestrutura</a>
+						<ul class="submenu-1"> <!--Esse é o 2 nivel ou o primeiro Drop Down--> 
+							<li><a href="#">Posto</a>
+								<ul class="submenu-1"> <!--Esse é o 2 nivel ou o primeiro Drop Down--> 
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>       
+								</ul>
+							</li>
+							<li><a href="#">Rodovia</a>
+								<ul class="submenu-1"> <!--Esse é o 2 nivel ou o primeiro Drop Down--> 
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>       
+								</ul>
+							</li>
+							<li><a href="#">Transportadores</a>
+								<ul class="submenu-1"> <!--Esse é o 2 nivel ou o primeiro Drop Down--> 
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>       
+								</ul>
+							</li>        
+							<li><a href="#">Câmera</a>
+								<ul class="submenu-1"> <!--Esse é o 2 nivel ou o primeiro Drop Down--> 
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>       
+								</ul>
+							</li>        
+						</ul>
+					</li> 
+					<li class="menu"><a href="#">Posto de pesagem</a>
+						<ul class="submenu-1">
+							<li><a href="#">Balança</a>
+								<ul class="submenu-1"> <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Pesagem</a>
+								<ul class="submenu-1"> <!-- Esse é o 2 nivel ou o primeiro Drop Down -->
+									<li><a href="#">Cadastrar</a></li>
+									<li><a href="#">Pesquisar</a></li>
+									<li><a href="#">Consultar</a></li>
+								</ul>
+							</li>
+						</ul>	
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<!--<div class="centro">
+				<form name="form" method="post" action="#" id="formularioCentro" class="formulario">
+					Cole os fieldset aqui
+					
+				</form>			
+			</div>-->
+			<form name="form" method="post" action="#" id="formularioJ" class="formulario">
+				<h1>Cadastro de Carga</h1>
+				<div class="esquerda">
+					<!--Cole os fieldset aqui-->
+					<fieldset>
+						<legend>Dados Endereço</legend>
+						<div class="campo"> 
+							<label for="logradouroJ">Logradouro:</label> 
+							<input type="text" name="logradouro" id="logradouroJ" class="campoObrig iLetras"><span class="tSpan" id="x_logradouroJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="numeroJ">Número:</label> 
+							<input type="text" name="numero" id="numeroJ" class="campoObrig"><span class="tSpan" id="x_numeroJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="complementoJ">Complemento:</label> 
+							<input type="text" name="complemento" id="complementoJ" class="campoObrig iLetras"><span class="tSpan" id="x_complementoJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="cepJ">CEP:</label> 
+							<input type="text" name="cep" id="cepJ" class="campoObrig"><span class="tSpan" id="x_cepJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="bairroJ">Bairro:</label> 
+							<input type="text" name="bairro" id="bairroJ" class="campoObrig iLetras"><span class="tSpan" id="x_bairroJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="cidadeJ">Cidade:</label> 
+							<input type="text" name="cidade" id="cidadeJ" class="campoObrig iLetras"><span class="tSpan" id="x_cidadeJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="ufJ">UF</label> 
+							<input type="text" name="uf" id="ufJ" class="campoObrig iLetras"><span class="tSpan" id="x_ufJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="paisJ">Pais:</label> 
+							<input type="text" name="pais" id="paisJ" class="campoObrig iLetras"><span class="tSpan" id="x_paisJ" class=""></span>
+						</div>
+					</fieldset>
+				</div>
+				<div class="direita">
+				<!--Cole os fieldset aqui-->
+					<fieldset>
+						<legend>Dados Endereço</legend>
+						<div class="campo"> 
+							<label for="logradouroJ">Logradouro:</label> 
+							<input type="text" name="logradouro" id="logradouroJ" class="campoObrig iLetras"><span class="tSpan" id="x_logradouroJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="numeroJ">Número:</label> 
+							<input type="text" name="numero" id="numeroJ" class="campoObrig iLetras"><span class="tSpan" id="x_numeroJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="complementoJ">Complemento:</label> 
+							<input type="text" name="complemento" id="complementoJ" class="campoObrig iLetras"><span class="tSpan" id="x_complementoJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="cepJ">CEP:</label> 
+							<input type="text" name="cep" id="cepJ" class="campoObrig"><span class="tSpan" id="x_cepJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="bairroJ">Bairro:</label> 
+							<input type="text" name="bairro" id="bairroJ" class="campoObrig iLetras"><span class="tSpan" id="x_bairroJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="cidadeJ">Cidade:</label> 
+							<input type="text" name="cidade" id="cidadeJ" class="campoObrig iLetras"><span class="tSpan" id="x_cidadeJ" class=""></span>
+						</div>
+						<div class="campo"> 
+							<label for="ufJ">UF</label> 
+							<input type="text" name="uf" id="ufJ" class="campoObrig iLetras"><span class="tSpan" id="x_ufJ" ></span>
+						</div>
+						<div class="campo"> 
+							<label for="paisJ">Pais:</label> 
+							<input type="text" name="pais" id="paisJ" class="campoObrig iLetras"><span class="tSpan" id="x_paisJ"></span>
+						</div>
+					</fieldset>	
+				</div>
+				<div class="botoes" id="botoes">
+					<input type="submit" value="Enviar" name="enviar" id="enviarJ" class="botaoJ">
+					<input type="reset" value="Cancelar" name="Limpar" id="limparJ" class="botaoJ">				
+				</div>
+			</form>
+		</div>
+		<div id="clear"></div>
+		<div id="rodape">
+			<div class="main">
+				<div id="footer">
+					&copy 2015 - Projeto Digimon | Forsoft Rio
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

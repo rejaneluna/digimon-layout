@@ -1,0 +1,324 @@
+html {
+	background: url(../imagens/bg-digimon.jpg) no-repeat center center fixed;  /*imagem fixada no centro e sem repetiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o */
+	-webkit-background-size: cover; /*regra para a imagem ocupar toda a extensÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o da pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡gina em diferentes navegadores */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	margin: 0 auto;/*regra para centralizar todo o conteÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºdo do site. Todos os elementos dentro de body vÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o herdar esta regra */
+}
+
+a {
+	text-decoration: none;
+	color: #324481;
+	font-family: "Myriad Pro";
+}
+
+.header {
+	height: 61px;
+	background-color: #041227;/*altura e cor da barra superior */
+	width: 100%;
+	position: fixed;
+}
+
+.wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.home .main .wrapper {
+	width: 750px;
+	margin: 0 auto;
+	/* height: 100%; */
+	position: relative;
+}
+
+.home .right {
+	border-left: 2px solid #00adf3;
+	border-left: 3px solid #324481;
+	float: right;
+	margin-top: 89px;
+	padding-left: 60px;
+}
+
+.home .left {
+	float: left;
+	margin-top: 70px;
+}
+
+a.mais {
+    width: 88px;
+    height: 24px;
+    border: 3px solid #324481;
+    margin: 53px 0 0 0;
+    padding: 11px 0px 5px 17px;
+    position: absolute;
+    clear: both;
+    display: block;
+}
+
+a.mais:hover {
+	background-color: #00adf3;
+	color: white;
+	border: solid 3px white;
+}
+
+.footer {
+	width: 100%;
+	height: 60px;
+	background-color: #041227;
+	position: absolute;
+	bottom: 0;
+	left: 0;/*regras para o tamanho, altura, cor e posicionamento do footer. as trÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âªs ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºltimas garantem que ele sempre estarÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ no fim da pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡gina.*/
+}
+
+
+.logo {
+	margin-top: 10px;
+	float: left;
+	margin-left: 50px;
+	/*regras para o posicionamento da logo */
+}
+
+.menu {
+	float: right;
+	margin-right: 50px;/*regras para o posicionamento do menu */
+	padding-top: 0px;
+}
+
+ul {
+	list-style: none;/*regra para remover o estilo padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o da lista, que sÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o bolinhas do lado de cada item. */
+}
+
+.menu li {
+	display: inline;
+	/*regra para que a lista seja horizontal */
+}
+
+.menu li a {
+	font-family: "Myriad Pro";
+	color: white;
+	text-decoration: none;
+	padding: 4px 5px;/*regras para a fonte utilizada no menu, cor do texto, remoÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o da decoraÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o (sublinhado) e padding para posicionamento */
+}
+
+.home .menu li a{
+	padding: 25px 15px;
+}
+
+.menu li a:hover {
+	background-color: #00adf3;/*regra para quando o mouse passar em cima de um item do menu. A regra que define o tamanho da caixa a ser colorida ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© o padding acima. */
+}
+
+p.titulo {
+	font-family: 'copperplate gothic bold','Myriad Pro', sans-serif;
+	font-size: 70pt;
+	color: #234284;
+	-webkit-margin-before: 60px;
+	-webkit-margin-after: 0px;/*regra para a fonte do tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­tulo, font-weight para "normalizar" a fonte em todos os browsers afim de evitar que algum exiba a fonte de forma diferente, 
+		tamanho da fonte, cor do texto e posicionamento. As regras -webkit- estÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o sobreescrevendo os atributos padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âµes da tag <p> que jÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ vem com um espaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§amento
+		padrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o em volta dela. Before seria equivalente a margin-top e after equivalente a margin-bottom. Ainda existem dois que nÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o foram sobreescritos,
+		que equivalem a margin-left e margin-right.
+	 */
+}
+
+p.texto {
+	font-family: "Myriad Pro";
+	font-weight: normal;
+	text-align: left;
+	color: #234284;
+	position: relative;
+	margin-top: 0px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	float: left;/*mesma coisa do tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­tulo. O float aqui estÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ servindo apenas como um ajudante no posicionamento. Sem ele os elementos estavam se comportando de forma
+		estranha. NÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o me perguntem o pq disso funcionar, css ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© magia pura.
+	 */
+}
+
+.divisor {
+	width: 2px;
+	height: 200px;
+	background-color: #006fc0;
+	margin-left: 760px;
+	margin-top: -100px;
+	/*regras para o posicionamento da barrinha divisora */
+}
+
+
+.logoGrande {
+	margin-top: 22px;/*regras para o posicionamento da logo grande */
+}
+
+@media (max-width: 650px) {
+	.menu {
+		margin-left: 180px;
+		position: fixed;
+		/*regras para que o menu se comporte de forma diferente quando a tela for de um tamanho especÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­fico (neste caso, de 0 atÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© 650px).
+			A regra @media ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© o segredo por trÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡s dos sites responsivos. Podemos escrever vÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡rias regras para vÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡rios tamanhos de telas diferentes
+			e fazer com que elementos especÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ficos se comportem de forma especial nestes tamanhos.
+		 */
+	}
+}
+
+.caixaLogin {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	/* margin: 15px auto; */
+}
+
+.login {
+	position: relative;
+	margin: 0 auto;
+	width: 280px;
+}
+
+.login input[type=text], input[type=password] {
+	width: 210px;
+	height: 30px;
+}
+
+.login input[type=text] {
+	margin-left: 10px;
+}
+
+.login input[type=password] {
+	margin-left: 7px;
+}
+
+label {
+	font-family: "Myriad Pro";
+	color: white;
+}
+
+.entrar {
+	margin-left: 60px;
+}
+
+form {
+	margin-bottom: 70px;
+}
+
+input[type=submit] {
+	background-color: #00adf3;
+	border: 0px;
+	padding: 2px 10px ;
+	color: white;
+	font-family: "Myriad Pro", Bold;
+	font-size: 15pt;
+	margin-top: -25px;
+}
+
+input[type=button] {
+	background-color: #00adf3;
+	border: 0px;
+	padding: 2px 10px ;
+	color: white;
+	font-family: "Myriad Pro", Bold;
+	font-size: 15pt;
+}
+.botaoJ {
+	background: #00adf3;
+	color: #fff;
+	width: 100px;
+	height: 30px;
+	cursor:pointer;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+/*
+.login-help {
+	float: left;
+	margin-left: 200px;
+	margin-top: -25px;
+}
+*/
+.login-help a {
+	color: white;
+	font-family: "Myriad Pro";
+	font-size: 10pt;
+}
+
+
+.logoLogin {
+	margin-top: 100px;
+}
+
+h1 {
+	color: white;
+	font-family: "Myriad Pro";
+}
+
+ul.menu, .menu li, .menu a{
+	margin: 7px 0 0 0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+}
+
+.menu a{
+	margin-top:-16px;
+}
+
+.submenu-1 a{
+	margin:0px;
+}
+
+ul.menu ul{ 
+	position:absolute;
+	display:none; 
+}
+
+/* ConfiguraÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âµes nivel 1*/
+ul.menu{ 
+	float:left; 
+	font-family:Verdana, Geneva, sans-serif; 
+	font-size:15px; 
+	padding:0 5px;
+	margin-right: 120px;
+}
+.menu li{ 
+	float:left; 
+	width:auto; 
+	position:relative;
+}
+ul{
+	display:block;
+	padding:0 20px;
+	line-height:45px;
+	height: 62px;
+	float:left;
+	margin: 0;
+}
+
+/* ConfiguraÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âµes nivel 2*/
+.menu li:hover > ul.submenu-1{ 
+	display:block; 
+	top:55px;
+	left:-5px; 
+	padding:5px; 
+	width:100px; 
+}
+
+.menu ul.submenu-1 a{  
+	width:150px; 
+	padding:0 20px; 
+	background:#051529; 
+	height: 50px;
+}
+
+.menu ul.submenu-1 a:hover{  
+	background:#3d75b3; 
+}
+
+.menuItem {
+	margin-top: 0px !important;
+}
+/*No geral a pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡gina estÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ muito hardcoded nos posicionamentos, ou seja, eu coloquei tudo muito bem definido por pixels, o que nÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© uma prÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡tica
+	lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ muito boa. Mas como a pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡gina tem poucos elementos que nÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o devem mesmo sair do lugar, eu preferi desta forma. Se alguem quiser experimentar
+	outras formas, como porcentagem, ou brincar com o @media, ou realmente fazer o que quiser na pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡gina, sintam-se ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â  vontade. Se alguÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©m fizer algo
+	que julgue ter melhorado o trabalho, falem comigo e com os lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­deres, que aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ a gente vÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âª se tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ realmente tudo certinho e coloca a versÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£o melhorada
+	no projeto.)      
