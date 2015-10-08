@@ -269,7 +269,12 @@ window.onload = function () {
 var y = _gbc("campoObrig");/*class de todos os inputs que devem ser iserido o texto "Campo Obriatório"*/
 var x = _gbc("tSpan");/*class de todas as tags span*/
 
-		onload="alternate('tblConsulta')";
+		//console.log(document.getElementByTagName("body"));
+		//if (hasClass(document.getElementsByTagName("body")[0], "pesquisar")){
+		if (hasClass(document.body, "pesquisar")){
+			alternate("tblConsulta");
+		}
+		
 		for (var i = 0; i < y.length; i++) {
 			//console.log(y);
 			if ( hasClass(y[i], "campoObrig") ) {
