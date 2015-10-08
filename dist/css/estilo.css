@@ -88,6 +88,23 @@ td {
 	height: 25px;
 }
 
+tr td:last-child a {
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    color: transparent;
+	background-image: url(../../img/abrir.png) !important;
+    background-position: 0px 1px !important;
+}
+
+/*a.editar {
+	background-image: url(../../img/edit.png);
+    background-position: 0px 0px;	
+}*/
+
+
 .cabecalh {
     background-color: #041227;
     font-weight: bold;
@@ -96,6 +113,10 @@ td {
 }
 .even{
 	background-color: rgba(162,164,166, 5.7);
+}
+
+.odd{
+	background-color: rgba(155,155,155, 5.7);
 }
 
 #main #botoes{
@@ -126,7 +147,7 @@ fim erro*/
 #enviarJ {
 	background-image: url(../../img/sprite.png);
 	/*background-position-y: -88px;*/
-	background-position: -105px -88px;
+	background-position: 0px -88px;
 }
 
 #pesquisarJ {
@@ -240,19 +261,17 @@ a.conta {
 .sair{   
     width:25px;
     background-image: url(../../img/sair.png);
-    background-position-y: 0px;
-    background-position-x: 0px;
-	background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
 	background-color: gray !important;
-    border-bottom: 3px solid #3d75b3;
+    border-bottom: 4px solid #3d75b3;
 	float: right;
 }
 
 .sair:hover {
 
 	background-image: url(../../img/sair.png);
-    background-position-y: 0px;
-    background-position-x: 0px;
+    background-position: 0px 0px;
 	/*background-color: #3d75b3 !important;*/
 	border-bottom: 4px solid #00adf3;
 
@@ -261,8 +280,7 @@ a.conta {
 .conta {
     width: 25px;
     background-image: url(../../img/my-acount.png);
-    background-position-y: 0px;
-    background-position-x: 0px;
+    background-position: 0px 0px;
     background-repeat: no-repeat;
     background-color: gray !important;
     border-bottom: 4px solid #3d75b3;
@@ -271,19 +289,18 @@ a.conta {
 
 .conta:hover {
 	background-image: url(../../img/my-acount.png);
-    background-position-y: 0px;
-    background-position-x: 0px;
-	/*background-color: #3d75b3 !important;*/
+    background-position: 0px 0px;
+    /*background-color: #3d75b3 !important;*/
 	border-bottom: 4px solid #00adf3;	
 }
 
 #nav {
     /* width: 10em; */
-    width: 61%;
+    width: 74%;
     float: right;
     /* background: #00adf3; */
     padding: 0;
-    margin-top: 28px;
+    margin-top: 18px;
     /* border-top: solid 1px white; */
     text-align: right;
 	height:37px;
@@ -318,6 +335,7 @@ a.conta {
 	border-left: 1em solid #069;*/
 	background-color:#041227;
 	color: #fff;
+	padding: 3px 5px 7px 5px;
 }
 
 
@@ -342,11 +360,11 @@ a.conta {
     position: absolute;
     left: -1000em;
     width: 10em;
-    margin: 0px 0 0 -32px;
+    margin: 0px 0 0 -22px;
 }
 
 ul.submenu-1 .submenu-1 {
-    margin: -37px 0 0 96px !important;
+    margin: -47px 0 0 116px !important
 }
 
 #nav ul ul {
@@ -489,7 +507,7 @@ label {
 	margin: 0px;
 }
 
-#limparJ:hover, #enviarJ{
+#limparJ:hover, #enviarJ, #pesquisarJ{
 cursor: pointer;
 }
 
