@@ -115,6 +115,14 @@ td {
 	background-color: transparent;
 }
 
+/*imagem alerta erro
+input {
+    background-image: url(../../img/erro.png);
+        background-position: right 3px;
+    background-repeat: no-repeat;
+}
+fim erro*/
+
 #enviarJ {
 	background-image: url(../../img/sprite.png);
 	/*background-position-y: -88px;*/
@@ -444,8 +452,13 @@ label {
     float: left;
     font-size: 12px;
     color: white;
-    background-color: red;
-	margin: -4px 0 0 129px;
+    margin: -4px 0 0 129px;
+	color: red;
+    margin: -1px 0 0 130px;
+    text-indent: 16px;
+	background-image: url(../../img/erro.png);
+    background-position: left 1px;
+    background-repeat: no-repeat;
 }
 /*FORMULARIO*/
 

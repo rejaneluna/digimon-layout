@@ -118,15 +118,23 @@ function obrigatorio(e) {
 			var cpf = new CPF();
 			var cpfValido = cpf.valida( e.currentTarget.value );
 			if ( !cpfValido ) {
-				testando(e.currentTarget, "CPF");
+				addMsgErro(e.currentTarget, "CPF");
 				return false;
 			}
 		}
 		
 		if ( e.currentTarget.id == "telJ" ) {
 			var regexTel = /^\d+\ \d+\-\d+$/;
-			if (!e.currentTarget.value.match(regexTel)) { 
-				testando(e.currentTarget, "Telefone")
+			if (!e.currentTarget.value.match(regexTel) || e.currentTarget.value.length <12) { 
+				addMsgErro(e.currentTarget, "Telefone")
+				return true;
+			}
+		}
+		
+		if ( e.currentTarget.id == "celJ" ) {
+			var regexCel = /^\d+\ \d+\-\d+$/;
+			if (!e.currentTarget.value.match(regexCel) || e.currentTarget.value.length <13) { 
+				addMsgErro(e.currentTarget, "Celular")
 				return true;
 			}
 		}
@@ -134,7 +142,7 @@ function obrigatorio(e) {
 		if ( e.currentTarget.id == "cepJ" ) {
 			var regexCep = /^\d+\.\d+\-\d+$/;
 			if (!e.currentTarget.value.match(regexCep)) { 
-				testando(e.currentTarget, "CEP")
+				addMsgErro(e.currentTarget, "CEP")
 				return true;
 			}
 		}
@@ -142,7 +150,7 @@ function obrigatorio(e) {
 		if ( e.currentTarget.id == "cnpjJ" ) {
 			var cnpjValido = TestaCNPJ (e.currentTarget.value);
 			if  (cnpjValido == false ){
-				testando(e.currentTarget, "CNPJ")
+				addMsgErro(e.currentTarget, "CNPJ")
 				return true;
 			}
 		}
@@ -150,7 +158,7 @@ function obrigatorio(e) {
 		if ( e.currentTarget.id == "emailJ" ) {
 			var emailValido = ValidaEmail (e.currentTarget.value);
 			if  (emailValido == false ){
-				testando(e.currentTarget, "e-mail")
+				addMsgErro(e.currentTarget, "e-mail")
 				return true;
 			}
 		}
@@ -387,8 +395,8 @@ _$("limparJ").onclick = function limpar(campo) {
 	window.location.reload();
 }
 
-//Isso é igual a function testando(teste)
-var testando = function(teste, nome){
+//Isso é igual a function addMsgErro(teste)
+var addMsgErro = function(teste, nome){
 	teste.nextSibling.innerHTML 		= nome+ " Inválido(a)!";
 	teste.style.border 				= "thin solid red";	
 	teste.nextSibling.style.display 	= "block";
