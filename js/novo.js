@@ -234,10 +234,42 @@ function somenteLetras(e){
 	}
 }
 
+/*Tabela*/
+
+function alternate(id){ 
+
+  if(document.getElementsByTagName){  
+
+    var table = document.getElementById(id);   
+
+    var rows = table.getElementsByTagName("tr");   
+
+    for(i = 0; i < rows.length; i++){           
+
+  //manipulate rows 
+
+      if(i % 2 == 0){ 
+
+        rows[i].className = "even"; 
+
+      }else{ 
+
+        rows[i].className = "odd"; 
+
+      }       
+
+    } 
+
+  } 
+
+}
+
+/*fim tabela*/
 window.onload = function () {
 var y = _gbc("campoObrig");/*class de todos os inputs que devem ser iserido o texto "Campo Obriatório"*/
 var x = _gbc("tSpan");/*class de todas as tags span*/
 
+		onload="alternate('tblConsulta')";
 		for (var i = 0; i < y.length; i++) {
 			//console.log(y);
 			if ( hasClass(y[i], "campoObrig") ) {

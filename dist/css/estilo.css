@@ -73,6 +73,31 @@ li {
 	color:black;	
 	font-size:30px;
 }
+
+.pesquisar #main h1{
+	margin: 20px 0 40px 0;
+}
+
+table#tblConsulta {
+    background-color: rgba(0,0,0, 0.2);
+	min-width: 702px;
+	text-align: center;
+}
+
+td {
+	height: 25px;
+}
+
+.cabecalh {
+    background-color: #041227;
+    font-weight: bold;
+    font-size: 15px;
+    /*text-transform: uppercase;*/
+}
+.even{
+	background-color: rgba(162,164,166, 5.7);
+}
+
 #main #botoes{
 	clear: both;
 	text-align:center;	
@@ -92,23 +117,39 @@ li {
 
 #enviarJ {
 	background-image: url(../../img/sprite.png);
-	background-position-y: -88px;
+	/*background-position-y: -88px;*/
+	background-position: -105px -88px;
 }
 
-#enviarJ:hover {
+#pesquisarJ {
 	background-image: url(../../img/sprite.png);
-	background-position-x: -105px;
+	/*background-position-y: -88px;*/
+	background-position: -3px -88px;
+}
+
+#enviarJ:hover{
+	background-image: url(../../img/sprite.png);
+	/*background-position-x: -105px;*/
+	background-position: -105px -88px;
+}
+
+#pesquisarJ:hover{
+	background-image: url(../../img/sprite.png);
+	/*background-position-x: -105px;*/
+	background-position: -105px -88px;
 }
 
 #limparJ {
 	background-image: url(../../img/sprite.png);
-	background-position-x: -207px;
-    background-position-y: -88px;
+	/*background-position-x: -207px;
+    background-position-y: -88px;*/
+	background-position: -207px -88px;
 }
 
 #limparJ:hover {
 	background-image: url(../../img/sprite.png);
-	 background-position-x: -309px;
+	/*background-position-x: -309px;*/
+	background-position: -309px -88px;
 }
 
 /*FIM CONTEUDO CENTRAL*/
@@ -194,7 +235,7 @@ a.conta {
     background-position-y: 0px;
     background-position-x: 0px;
 	background-repeat: no-repeat;
-	background-color: #00adf3 !important;
+	background-color: gray !important;
     border-bottom: 3px solid #3d75b3;
 	float: right;
 }
@@ -204,7 +245,7 @@ a.conta {
 	background-image: url(../../img/sair.png);
     background-position-y: 0px;
     background-position-x: 0px;
-	background-color: #3d75b3 !important;
+	/*background-color: #3d75b3 !important;*/
 	border-bottom: 4px solid #00adf3;
 
 }
@@ -215,7 +256,7 @@ a.conta {
     background-position-y: 0px;
     background-position-x: 0px;
     background-repeat: no-repeat;
-    background-color: #00adf3 !important;
+    background-color: gray !important;
     border-bottom: 4px solid #3d75b3;
 	float: left;
 }
@@ -224,7 +265,7 @@ a.conta {
 	background-image: url(../../img/my-acount.png);
     background-position-y: 0px;
     background-position-x: 0px;
-	background-color: #3d75b3 !important;
+	/*background-color: #3d75b3 !important;*/
 	border-bottom: 4px solid #00adf3;	
 }
 
@@ -370,6 +411,7 @@ legend{
 	max-width: 465px;
 }
 
+
 .esquerda .campo input, .direita .campo input{
 	max-width: 311px;
 }
@@ -392,6 +434,10 @@ label {
 	margin: 5px 10px 0 0;
 	min-width:118px;
 	color: black;
+}
+
+.pesquisa .campo label{
+	min-width: 359px;
 }
 
 .tSpan {
