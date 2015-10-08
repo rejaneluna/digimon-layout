@@ -102,13 +102,13 @@ li {
 
 #limparJ {
 	background-image: url(../../img/sprite.png);
-	background-position-x: -309px;
+	background-position-x: -207px;
     background-position-y: -88px;
 }
 
 #limparJ:hover {
 	background-image: url(../../img/sprite.png);
-	 background-position-x: -207px;
+	 background-position-x: -309px;
 }
 
 /*FIM CONTEUDO CENTRAL*/
@@ -364,7 +364,14 @@ legend{
 	font-size:18px;
 	height: 14px;
 	float: left;
-	width:301px;
+}
+
+.centro .campo input {
+	max-width: 465px;
+}
+
+.esquerda .campo input, .direita .campo input{
+	max-width: 311px;
 }
 
 input:focus {
