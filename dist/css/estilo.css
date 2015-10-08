@@ -478,6 +478,10 @@ label {
     background-position: left 1px;
     background-repeat: no-repeat;
 }
+
+.centro .tSpan {
+	clear: both;
+}
 /*FORMULARIO*/
 
 /*CONTEUDO SOMENTE CENTRAL*/
